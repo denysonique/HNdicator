@@ -1,0 +1,16 @@
+{
+  "name": "HNdicator",
+  "version": "0.1",
+  "description": "HackerNews Character Limit Indicator",
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png", 
+             "128": "icon128.png"
+           },
+  "permissions": [ "http://news.ycombinator.com/submit" ],
+  "content_scripts": [
+    {
+        "matches": ["http://news.ycombinator.com/submit"],
+        "js"     : ["jquery-1.6.1.min.js", "HNdicator.js"]
+    }
+   ]
+}
